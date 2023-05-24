@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // BÀI 1
+
+        /* let list1 = [9,2,3,0];
+        let list2 = [4,26,18,2,9];
+        function listNumber(a, b) {
+            let listNumber = list1.concat(list2);
+            console.log(listNumber);
+            for (let i = 0; i < listNumber.length - 1; i++) {
+                for (let j = 0; j < listNumber.length-i-1; j++) {
+                    if (listNumber[j] > listNumber[j+1]) {
+                        let temp = listNumber[j];
+                       listNumber[j] = listNumber[j+1];
+                        listNumber[j+1] = temp;
+                    }
+                }
+            }
+            return listNumber;
+        }
+        let output = listNumber(list1, list2);
+        console.log(output);
+ */
+
+
+
+        // BÀI 2
+        /*  let nums = [2, 7, 5, 15];
+         let target = 13;
+         function numBer(a) {
+             for (let i = 0; i < nums.length; i++) {
+                 for (let j = 0; j < nums.length; j++) {
+                     if (nums[i] + nums[j] == target) {
+                        console.log(`Vị trí phù hợp: [${i},${j}]`);
+                         break;
+                     }
+                 }
+             }
+             return "Không vị trí nào thỏa";
+         }
+         let result=numBer(nums);
+         console.log(result); */
+
+
+
+        // BÀI 3
+      
+      function test(arr){
+        if (arr.length === 0) {
+              return ""
+          }
+          if (arr.length === 1) {
+              return arr[0]
+          }
+      let result = "";
+            for (let i = 0; i < arr[0].length; i++) {
+                for (let j = 1; j < arr.length; j++) {
+                    if (arr[0][i] == arr[j][i]) {
+                        continue;
+                    } else {
+                        return result
+                    }
+                }
+                result += arr[0][i];
+            }
+            return result;
+            
+        };
+        console.log(test(["flower", "flow", "flosy"]));
+
+     
+
+
+
+
+
+    </script>
+</body>
+
+</html>
